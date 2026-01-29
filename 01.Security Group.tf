@@ -1,5 +1,4 @@
 # 기존 VPC 참조
-data "aws_vpc" "vec_prd_vpc" {
   filter {
     name   = "tag:Name"
     values = ["VEC-PRD-VPC"]
@@ -52,3 +51,4 @@ resource "aws_security_group" "vec_prd_ecs_pub_2a_sg" {
     description = "Allow all outbound traffic"
   }
 }
+
