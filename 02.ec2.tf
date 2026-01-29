@@ -1,10 +1,3 @@
-# 기존 서브넷 참조
-data "aws_subnet" "vec_prd_bst_subnet_2a" {
-  filter {
-    name   = "tag:Name"
-    values = ["VEC-PRD-VPC-BESTION-PUB-2A"]
-  }
-}
 
 # ECS Instance
 resource "aws_instance" "vec_prd_ecs_pub_2a" {
@@ -29,3 +22,4 @@ resource "aws_instance" "vec_prd_ecs_pub_2a" {
   }
 
 }
+
