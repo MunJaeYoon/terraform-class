@@ -1,9 +1,3 @@
-# 기존 VPC 참조
-  filter {
-    name   = "tag:Name"
-    values = ["VEC-PRD-VPC"]
-  }
-}
 
 # ECS Instance Security Group
 resource "aws_security_group" "vec_prd_ecs_pub_2a_sg" {
@@ -51,5 +45,6 @@ resource "aws_security_group" "vec_prd_ecs_pub_2a_sg" {
     description = "Allow all outbound traffic"
   }
 }
+
 
 
